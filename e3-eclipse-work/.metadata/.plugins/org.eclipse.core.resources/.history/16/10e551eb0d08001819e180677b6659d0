@@ -1,0 +1,19 @@
+package cn.e3shop.item.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import cn.e3shop.manager.service.ItemService;
+
+@Controller
+public class ItemHandler {
+	private ItemService itemService; 
+	@RequestMapping(value="/item/${item}",method=RequestMethod.GET)
+	public String getItemById() {
+		itemService.findByItemId(id);
+		return null;
+		
+	}
+
+}

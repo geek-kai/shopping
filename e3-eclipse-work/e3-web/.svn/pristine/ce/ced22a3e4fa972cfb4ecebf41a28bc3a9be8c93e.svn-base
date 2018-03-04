@@ -1,0 +1,28 @@
+package cn.e3shop.manager.controller;
+
+import java.util.List;
+
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import cn.e3shop.manager.service.ItemCatService;
+import cn.geek.e3shop.common.pojo.EasyUiTreeResult;
+
+@Controller
+public class ItemCatHandler {
+
+	@Resource
+	private ItemCatService itemCatService;
+	
+	@RequestMapping(value="item/cat/list",method= {RequestMethod.GET,RequestMethod.POST})
+	@ResponseBody
+	private List<EasyUiTreeResult> getEasyUiTreeResults(@RequestParam(name="id",defaultValue="0")Long parentId){
+		
+		return itemCatService.getEasyUiTreeResults(parentId);
+	}
+}

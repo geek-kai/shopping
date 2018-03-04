@@ -1,0 +1,4 @@
+cn/e3shop/search/dao/ItemSearchDao.class
+cn/e3shop/search/message/SynchronizeItemChangeTosolr.class
+cn/e3shop/search/service/impl/ItemSearchServiceImpl.class
+cn/e3shop/search/mapper/ItemMapper.class

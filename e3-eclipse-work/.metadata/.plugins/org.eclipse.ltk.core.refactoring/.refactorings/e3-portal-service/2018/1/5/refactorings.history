@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;e3-portal-service/src/main/webapps&apos; to &apos;webapp&apos;" description="Rename resource &apos;webapps&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapps" name="webapp" stamp="1517235369453" updateReferences="true"/>
+</session>

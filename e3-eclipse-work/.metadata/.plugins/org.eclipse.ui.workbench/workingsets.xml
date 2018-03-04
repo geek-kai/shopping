@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1516886508107_1" label="e3-projectParient" name="e3-projectParient">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/e3-dao" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/e3-interface" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/e3-pojo" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/e3-service" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1517237501854_2" label="e3-content-parientproject" name="e3-content-parientproject">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/e3-content-service" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/e3-content-interface" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1517374384812_3" label="e3-search-parientproject" name="e3-search-parientproject">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/e3-search-interface" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/e3-search-service" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1516884073701_0" label="Window Working Set" name="Aggregate for window 1516884073700"/>
+</workingSetManager>

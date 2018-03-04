@@ -1,0 +1,20 @@
+package Demo;
+
+import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import cn.geek.e3shop.common.jedis.JedisClient;
+
+public class Demo {
+
+	
+	@Test
+	public void fun() {
+		ApplicationContext context=new ClassPathXmlApplicationContext("classpath:spring/application-redis.xml");
+		JedisClient jedisClient = (JedisClient) context.getBean("jedisClient");
+		jedisClient.set("key", "guokai");
+		System.out.println(jedisClient.get("key"));
+		
+	}
+}

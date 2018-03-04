@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="订单号" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="订单号"/>
+			<item value="orderForm"/>
+			<item value="localhost"/>
+			<item value="http://localhost:8094/order/create.html"/>
+			<item value="images[0]"/>
+			<item value="images"/>
+			<item value="redirectUrl"/>
+			<item value="return"/>
+			<item value="localhost：80"/>
+			<item value="localhost：809"/>
+			<item value="localhost：8092"/>
+			<item value="确认"/>
+			<item value="itemnum"/>
+			<item value="itemNumChange"/>
+			<item value="total_price"/>
+		</list>
+		<list key="replacehistory">
+			<item value="image"/>
+			<item value="${item.id}"/>
+			<item value=")!"/>
+			<item value="!)"/>
+			<item value="(item.title!)"/>
+			<item value="item.id"/>
+			<item value=""/>
+			<item value="8086"/>
+			<item value="cn.e3shop.manager.pojo"/>
+			<item value=" "/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="290" key="DIALOG_WIDTH"/>
+		<item value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont" key="DIALOG_FONT_NAME"/>
+		<item value="401" key="DIALOG_HEIGHT"/>
+		<item value="723" key="DIALOG_X_ORIGIN"/>
+		<item value="383" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

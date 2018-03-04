@@ -1,0 +1,9 @@
+package cn.e3shop.manager.service;
+
+import cn.e3shop.manager.pojo.TbItemDesc;
+
+public interface ItemDescService {
+
+	 public  TbItemDesc findItemDescByItemId(Long id);;
+	
+}

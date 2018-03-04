@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;CartService.java&apos; to &apos;e3-cart-service/src/main/java/cn.e3shop.cart.service.impl&apos;&#x0A;- Original project: &apos;e3-cart-interface&apos;&#x0A;- Destination element: &apos;e3-cart-service/src/main/java/cn.e3shop.cart.service.impl&apos;&#x0A;- Original element: &apos;cn.e3shop.cart.service.CartService.java&apos;" description="Copy compilation unit" destination="=e3-cart-service/src\/main\/java&lt;cn.e3shop.cart.service.impl" element1="/src\/main\/java&lt;cn.e3shop.cart.service{CartService.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1518181609442" units="1" version="1.0"/>
+</session>

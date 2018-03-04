@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;cn.e3shoop.portal.service&apos; to &apos;cn.e3shoop.content.service&apos;&#x0A;- Original project: &apos;e3-content-interface&apos;&#x0A;- Original element: &apos;e3-content-interface/src/main/java/cn.e3shoop.portal.service&apos;&#x0A;- Renamed element: &apos;e3-content-interface/src/main/java/cn.e3shoop.content.service&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;cn.e3shoop.portal.service&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java&lt;cn.e3shoop.portal.service" name="cn.e3shoop.content.service" qualified="false" references="true" stamp="1517238263162" textual="false" version="1.0"/>
+</session>

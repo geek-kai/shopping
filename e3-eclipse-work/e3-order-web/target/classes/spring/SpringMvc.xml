@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:dubbo="http://code.alibabatech.com/schema/dubbo" 
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
+        http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+    
+    
+    <context:component-scan base-package="cn.e3shop.order.controller" />
+	<context:property-placeholder location="classpath:conf/resource.properties"/>
+	<mvc:annotation-driven />
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/jsp/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+	<mvc:interceptors>    
+    <mvc:interceptor>  
+        <!-- 进行拦截：/**表示拦截所有controller -->
+        <mvc:mapping path="/**" />
+       
+        <bean class="cn.e3shop.order.controller.intercept.OrderIntercept"/>  
+    </mvc:interceptor>  
+</mvc:interceptors>     
+	<dubbo:application name="e3-order-web"/>
+	<dubbo:registry protocol="zookeeper" address="172.16.57.144:2181"/>	
+	<dubbo:reference interface="cn.e3shop.cart.service.CartService" id="cartServiceImpl" timeout="600000"/>
+	<dubbo:reference interface="cn.e3shop.order.service.OrderService" id="orderServiceImpl" timeout="600000"/>
+	
+ </beans>
+       
+        

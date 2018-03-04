@@ -1,0 +1,35 @@
+package cn.e3shop.manager.service.impl;
+
+import java.util.List;
+
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Service;
+
+import cn.e3shop.manager.mapper.TbItemDescMapper;
+import cn.e3shop.manager.pojo.TbItemDesc;
+import cn.e3shop.manager.pojo.TbItemDescExample;
+import cn.e3shop.manager.pojo.TbItemDescExample.Criteria;
+import cn.e3shop.manager.service.ItemDescService;
+@Service
+public class ItemDescServiceImpl implements ItemDescService {
+
+	@Resource
+	private TbItemDescMapper tbItemDescMapper;
+	/**
+	 * 根据itemId获取ItemDesc对象
+	 */
+	@Override
+	public TbItemDesc findItemDescByItemId(Long id) {
+		TbItemDescExample example=new TbItemDescExample();
+		Criteria criteria = example.createCriteria();
+		criteria.andItemIdEqualTo(id);
+		
+		List<TbItemDesc> list = tbItemDescMapper.selectByExampleWithBLOBs(example);
+		if(list!=null&&list.size()>0) {
+			return list.get(0);
+		}
+		return  null;
+	}
+
+}

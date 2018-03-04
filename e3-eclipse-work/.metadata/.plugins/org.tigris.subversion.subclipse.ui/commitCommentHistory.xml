@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CommitComments>	<CommitComment>1、增加 TbContentCategory增加后获得自增主键功能
+2、后台增加网页内容动态管理功能
+</CommitComment>
+	<CommitComment>初始导入。</CommitComment>
+	<CommitComment>网页内容服务功能</CommitComment>
+	<CommitComment>门户网站模块
+</CommitComment>
+	<CommitComment>更改项目包名</CommitComment>
+	<CommitComment>增加商品添加 商品浏览功能
+</CommitComment>
+	<CommitComment>第二天开发 增加后台系统商品浏览功能 并且对项目架构进行改造</CommitComment>
+</CommitComments>

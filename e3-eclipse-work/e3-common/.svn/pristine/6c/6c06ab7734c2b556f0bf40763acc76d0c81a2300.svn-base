@@ -1,0 +1,29 @@
+package cn.geek.e3shop.common.pojo;
+
+import java.util.List;
+
+import cn.geek.e3shop.pojo.TbItem;
+
+public class EasyUiDataGridResultPojo {
+
+	private Integer total;
+	
+	private List<TbItem> rows;
+
+	public Integer getTotal() {
+		return total;
+	}
+
+	public void setTotal(Integer total) {
+		this.total = total;
+	}
+
+	public List<TbItem> getRows() {
+		return rows;
+	}
+
+	public void setRows(List<TbItem> rows) {
+		this.rows = rows;
+	}
+	
+}

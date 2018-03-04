@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.e3shop.search.mapper.ItemMapper">
+
+	<select id="getAllItem" resultType="cn.geek.e3shop.common.pojo.SearchItems">
+		SELECT
+		b.name categoryName,
+		a.id,
+		a.title,
+		a.price,
+		a.sell_point,
+		a.num,
+		a.image FROM tb_item a LEFT JOIN tb_item_cat b
+		ON a.cid=b.id where a.status=1
+	</select>
+	
+	<select id="findItemById" parameterType="Long" resultType="cn.geek.e3shop.common.pojo.SearchItems">
+		SELECT
+		b.name categoryName,
+		a.id,
+		a.title,
+		a.price,
+		a.sell_point,
+		a.num,
+		a.image FROM tb_item a LEFT JOIN tb_item_cat b
+		ON a.cid=b.id where a.status=1 and a.id=#{itemId}
+	</select>
+</mapper>

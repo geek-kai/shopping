@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="CleanDialogSettings">
+		<item value="484" key="DIALOG_WIDTH"/>
+		<item value="false" key="TOGGLE_SELECTED"/>
+		<item value="378" key="DIALOG_HEIGHT"/>
+		<item value="559" key="DIALOG_X_ORIGIN"/>
+		<item value="218" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/Volumes/geek_kai/java/项目二：宜立方商城（80-93天）/e3商城_day01/黑马32期/01.教案-3.0/01.参考资料/FastDFS/bin/fastdfs_client"/>
+			<item value="/Volumes/geek_kai/java/项目二：宜立方商城（80-93天）/e3商城_day01/黑马32期/01.教案-3.0/01.参考资料/FastDFS/fastdfsClient"/>
+			<item value="/Volumes/geek_kai/java/项目二：宜立方商城（80-93天）/e3商城_day01/黑马32期/01.教案-3.0/01.参考资料/mybatis/pagehelper-fix"/>
+			<item value="/Users/geek_kai/e3-eclipse-work/generatorSqlmapCustom"/>
+			<item value="/Users/geek_kai/Documents/逆向工程/generatorSqlmapCustom"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.jdt.ui.wizards.JavaProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.emf.codegen.ecore.ui.wizardCategory"/>
+			<item value="org.eclipse.jdt.ui.java"/>
+			<item value="org.eclipse.jst.j2ee.internal"/>
+			<item value="org.eclipse.wst.jsdt.ui.java"/>
+		</list>
+	</section>
+</section>

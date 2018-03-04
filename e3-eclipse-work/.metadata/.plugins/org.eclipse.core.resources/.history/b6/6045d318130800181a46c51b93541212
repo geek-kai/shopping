@@ -1,0 +1,26 @@
+package cn.e3shop.item.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import cn.e3shop.item.pojo.Item;
+import cn.e3shop.manager.pojo.TbItem;
+import cn.e3shop.manager.service.ItemService;
+
+@Controller
+public class ItemHandler {
+	private ItemService itemService; 
+	@RequestMapping(value="/item/${itemId}",method=RequestMethod.GET)
+	public String getItemById(@PathVariable Long itemId,Model model) {
+		TbItem tbItem = itemService.getItemDetailsById(itemId);
+		Item item=new Item(tbItem);
+		model.addAttribute("item", item);
+		
+		return "item";
+		
+	}
+
+}

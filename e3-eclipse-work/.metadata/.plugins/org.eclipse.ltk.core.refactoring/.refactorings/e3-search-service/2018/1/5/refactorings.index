@@ -1,0 +1,6 @@
+1517376181050	Move 'rsource.properties' to 'conf'
+1517376881972	Delete element
+1517393763084	Rename resource 'TbContentMapper.xml'
+1517393779365	Rename resource 'SearchItemMapperxml'
+1517393843801	Rename resource 'SearchItemMapper.xml'
+1517394162678	Rename resource 'CreateItemSolrMapper.xml'

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:dubbo="http://code.alibabatech.com/schema/dubbo" 
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
+	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.2.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.2.xsd
+	
+	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.2.xsd
+	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+	<context:component-scan base-package="cn.e3shop.search"/>
+	
+	<!-- 配置solr -->
+	<bean id="solrClient" class="org.apache.solr.client.solrj.impl.HttpSolrServer">
+		<constructor-arg name="baseURL" value="${solr.url}"/>
+	</bean>
+	<!-- 配置集群solr -->
+	<!-- <bean id="solrCloud" class="org.apache.solr.client.solrj.impl.CloudSolrServer">
+		<constructor-arg name="zkHost" value="172.16.57.143:2182,172.16.57.143:2183,172.16.57.143:2184"></constructor-arg>
+		<property name="defaultCollection" value="collection3"></property>
+	</bean> -->
+	<dubbo:application name="e3-search"/>
+	<dubbo:registry	address="172.16.57.144:2181" protocol="zookeeper"/>
+	<!-- 用dubbo协议在20880端口暴露服务 -->
+	<dubbo:protocol name="dubbo" port="20882" host="172.16.57.1"/>
+	<dubbo:service interface="cn.e3shop.search.service.ItemSearchService" ref="itemSearchServiceImpl"/>
+</beans>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="81" key="passwordStores.location.y"/>
+	<item value="140" key="CommitDialog.location.y"/>
+	<item value="110" key="passwordStores.location.x"/>
+	<item value="113" key="CommitDialog.location.x"/>
+	<item value="120" key="HistoryTableProvider.SVNHistoryPage.作者"/>
+	<item value="500" key="CommitDialog.weights.0"/>
+	<item value="300" key="HistoryTableProvider.SVNHistoryPage.注释"/>
+	<item value="500" key="CommitDialog.weights.1"/>
+	<item value="401" key="CommitDialog.size.y"/>
+	<item value="1087" key="CommitDialog.size.x"/>
+	<item value="150" key="HistoryTableProvider.SVNHistoryPage.日期"/>
+	<item value="564" key="passwordStores.size.y"/>
+	<item value="921" key="passwordStores.size.x"/>
+	<item value="477" key="ChooseUrlDialog.size.x"/>
+	<item value="349" key="ChooseUrlDialog.size.y"/>
+	<item value="svn://localhost/e3Shop" key="RepositorySelectionPage.lastRepository"/>
+	<item value="trunck" key="DirectorySelectionPage.lastParent_svn://localhost/e3Shop"/>
+	<item value="418" key="ChooseUrlDialog.location.x"/>
+	<item value="60" key="HistoryTableProvider.SVNHistoryPage.修订"/>
+	<item value="112" key="ChooseUrlDialog.location.y"/>
+	<section name="CommitWizard">
+		<item value="500" key="VWeight2"/>
+		<item value="500" key="VWeight1"/>
+		<item value="false" key="ShowCompare"/>
+	</section>
+	<section name="NewLocationWizard">
+		<list key="ConfigurationWizardMainPage.STORE_URL_ID">
+			<item value="svn://localhost/e3Shop"/>
+			<item value="svn://localhost/mycode"/>
+		</list>
+	</section>
+</section>
